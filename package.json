@@ -8,6 +8,10 @@
     "build-css": "tailwindcss build src/styles.css -o public/styles.css"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@heroicons/vue": "^1.0.4",
     "vue": "^3.0.5",
     "vue-router": "^4.0.5",
     "vuex": "^4.0.0"
