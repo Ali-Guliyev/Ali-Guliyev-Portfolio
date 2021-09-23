@@ -31,6 +31,9 @@
       "photoURL": "https://user-images.githubusercontent.com/54935778/133991190-10e877cd-981f-4de8-b3c1-015367b3a51c.png"
     }
   ],
+  "text": {
+    "abouttext": "Hi I am Ali Guliyev and I am 14 years old. I am a web developer. And Ilove building websites with JavaScript 👨‍💻"
+  },
   "skills": [
     {
       "id": 1,
@@ -91,6 +94,20 @@
       "id": 12,
       "skill": "C++",
       "percentage": "20"
+    }
+  ],
+  "social": [
+    {
+      "name": "Twitter",
+      "fa-icon-name": "name"
+    },
+    {
+      "name": "Gmail",
+      "fa-icon-name": "name"
+    },
+    {
+      "name": "Github",
+      "fa-icon-name": "name"
     }
   ]
 }
