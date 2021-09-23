@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply overflow-x-hidden;
+}
+
 * {
   font-family: "Courier New", Courier, monospace;
+  @apply text-white;
+}
+
+.navLink {
+  @apply flex items-center justify-center gap-1 hover:bg-primary cursor-pointer rounded-full py-2 px-4 transition duration-75 ease-in;
+  animation: fade 2s ease 1 forwards;
+}
+
+.navLink svg {
+  @apply w-4 h-4;
+}
+
+section:nth-child(even) {
+  @apply bg-primary;
+}
+
+section:nth-child(odd) {
+  @apply bg-secondary;
 }
