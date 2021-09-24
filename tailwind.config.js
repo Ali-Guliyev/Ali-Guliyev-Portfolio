@@ -7,6 +7,9 @@ module.exports = {
         primary: "#212121",
         secondary: "#404040",
       },
+      screens: {
+        medium: "1086px",
+      },
     },
   },
   variants: {

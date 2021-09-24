@@ -6,6 +6,10 @@ body {
   @apply overflow-x-hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: "Courier New", Courier, monospace;
   @apply text-white;
@@ -20,10 +24,33 @@ body {
   @apply w-4 h-4;
 }
 
+.burger {
+  @apply flex flex-col cursor-pointer sm:hidden;
+  gap: 5px;
+}
+
+.burger .line {
+  @apply bg-white;
+  width: 2rem;
+  height: 0.2rem;
+}
+
+nav ul {
+  animation: move-in 1s ease 1 forwards;
+}
+
 section:nth-child(even) {
   @apply bg-primary;
 }
 
 section:nth-child(odd) {
   @apply bg-secondary;
+}
+
+section {
+  @apply px-6 pb-6 min-h-screen text-center;
+}
+
+section .title {
+  @apply p-4 text-xl sm:text-2xl font-bold;
 }

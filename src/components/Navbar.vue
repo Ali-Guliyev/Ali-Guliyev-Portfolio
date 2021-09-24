@@ -2,22 +2,37 @@
   <nav
     class="font-bold bg-secondary py-2 px-5 absolute top-0 left-0 w-full z-50"
   >
-    <div class="flex justify-between items-center max-w-7xl mx-auto">
-      <a href="#" class="logo" style="font-size: 19px">&lt;Ali Guliyev/&gt;</a>
+    <div class="sm:flex justify-between items-center max-w-7xl mx-auto">
+      <div class="flex justify-between items-center">
+        <a href="#" class="logo" style="font-size: 19px"
+          >&lt;Ali Guliyev/&gt;</a
+        >
+        <div class="burger" @click="toggleMenu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
 
-      <ul class="flex justify-between" ref="links">
-        <li class="navLink">
-          <UserIcon />
-          <span><a href="#">About</a></span>
-        </li>
-        <li class="navLink">
-          <CollectionIcon />
-          <span><a href="#">My Work</a></span>
-        </li>
-        <li class="navLink">
-          <PhoneIcon />
-          <span><a href="#">Contact me</a></span>
-        </li>
+      <ul class="hidden mt-2 sm:mt-0 sm:flex" ref="links">
+        <a href="#about">
+          <li class="navLink">
+            <UserIcon />
+            <span>About</span>
+          </li>
+        </a>
+        <a href="#work">
+          <li class="navLink">
+            <CollectionIcon />
+            <span>My Work</span>
+          </li>
+        </a>
+        <a href="#contact">
+          <li class="navLink">
+            <PhoneIcon />
+            <span>Contact me</span>
+          </li>
+        </a>
       </ul>
     </div>
   </nav>
@@ -32,7 +47,11 @@ export default {
   setup() {
     const links = ref(null);
 
-    return { links };
+    const toggleMenu = () => {
+      links.value.classList.toggle("hidden");
+    };
+
+    return { links, toggleMenu };
   },
 };
 </script>

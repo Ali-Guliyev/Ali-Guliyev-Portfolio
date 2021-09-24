@@ -3,35 +3,49 @@
     {
       "id": 1,
       "name": "Post App",
+      "website": "https://postapp-v1.web.app",
       "photoURL": "https://user-images.githubusercontent.com/54935778/133938436-4754b669-84d6-4d4f-ac7c-003028a9f221.png"
     },
     {
       "id": 2,
       "name": "Weather App",
+      "website": "https://weatherappbyali.onrender.com",
       "photoURL": "https://user-images.githubusercontent.com/54935778/133939554-fe805cf1-8b89-47e9-a2af-d8427f3f99a5.png"
     },
     {
       "id": 3,
       "name": "Chatroom",
+      "website": "https://chatroom-57.web.app",
       "photoURL": "https://user-images.githubusercontent.com/54935778/133939529-2ff094f2-aab2-4c16-9f00-9e8bf3915d66.png"
     },
     {
       "id": 4,
       "name": "Muso Ninjas",
+      "website": "https://muso-ninjas-v1.web.app/",
       "photoURL": "https://user-images.githubusercontent.com/54935778/133939723-e76adbaa-3596-4c9c-a8fe-474477a0ba3b.png"
     },
     {
       "id": 5,
       "name": "Hangman",
+      "website": "https://hangman.onrender.com",
       "photoURL": "https://user-images.githubusercontent.com/54935778/133939849-d552735c-ec17-4a8d-8df6-e2df7857e961.png"
     },
     {
       "id": 6,
       "name": "Github Profiles App",
+      "website": "https://github-profiles-app.netlify.app",
       "photoURL": "https://user-images.githubusercontent.com/54935778/133991190-10e877cd-981f-4de8-b3c1-015367b3a51c.png"
     }
+    {
+      "id": 7,
+      "name": "Click Button Sweeper",
+      "website": "https://clickbuttonsweeper.netlify.app",
+      "photoURL": "https://user-images.githubusercontent.com/54935778/134689777-3ec510c1-b822-4fa3-9cc1-9ea2c78a4264.png"
+    }
   ],
-  "about-text": "Hi I am Ali Guliyev and I am 14 years old. I am a web developer. And Ilove building websites with JavaScript 👨‍💻.",
+  "text": {
+    "abouttext": "Hi I am Ali Guliyev and I am 14 years old. I am a web developer. And Ilove building websites with JavaScript 👨‍💻"
+  },
   "skills": [
     {
       "id": 1,
