@@ -4,6 +4,7 @@
 
 body {
   @apply overflow-x-hidden;
+  @apply text-white;
 }
 
 html {
@@ -12,7 +13,6 @@ html {
 
 * {
   font-family: "Courier New", Courier, monospace;
-  @apply text-white;
 }
 
 .navLink {
@@ -47,10 +47,26 @@ section:nth-child(odd) {
   @apply bg-secondary;
 }
 
+section:not(#contact) {
+  @apply min-h-screen;
+}
+
 section {
-  @apply px-6 pb-6 min-h-screen text-center;
+  @apply px-6 pb-6 text-center;
 }
 
 section .title {
   @apply p-4 text-xl sm:text-2xl font-bold;
+}
+
+.project:hover .projectImage {
+  @apply scale-110;
+}
+
+#contact ul img {
+  @apply w-10 sm:w-14 transform transition hover:scale-110;
+}
+
+#contact ul li {
+  @apply mx-3 flex flex-col justify-between items-center cursor-pointer;
 }

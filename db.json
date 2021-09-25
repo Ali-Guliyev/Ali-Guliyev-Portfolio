@@ -114,19 +114,5 @@
       "skill": "C++",
       "percentage": "20"
     }
-  ],
-  "social": [
-    {
-      "name": "Twitter",
-      "fa-icon-name": "name"
-    },
-    {
-      "name": "Gmail",
-      "fa-icon-name": "name"
-    },
-    {
-      "name": "Github",
-      "fa-icon-name": "name"
-    }
   ]
 }

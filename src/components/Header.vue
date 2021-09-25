@@ -7,8 +7,10 @@
       >
         <div class="medium:text-left text-center">
           <span>
-            <span class="text-xl sm:text-3xl">Hi I am</span>
-            <h1 class="ml-1 text-xl sm:text-4xl font-bold inline">
+            <span class="text-xl sm:text-xl medium:text-2xl">Hi I am</span>
+            <h1
+              class="ml-1 text-xl sm:text-2xl medium:text-4xl font-bold inline"
+            >
               Ali Guliyev
             </h1>
           </span>
