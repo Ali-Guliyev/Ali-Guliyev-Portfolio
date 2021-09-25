@@ -1,10 +1,16 @@
 <template>
   <section>
     <h1 class="title">My Work</h1>
-    <div>
-      <div class="" v-for="project in projects" :key="project.id">
-        <img :src="project.photoURL" alt="" />
-        <span>{{ project.name }}</span>
+    <div class="grid gap-10">
+      <div
+        class="bg-secondary rounded-xl overflow-hidden"
+        v-for="project in projects"
+        :key="project.id"
+      >
+        <img class="object-cover" :src="project.photoURL" alt="" />
+        <div class="py-4 px-7 flex">
+          <span class="font-bold">{{ project.name }}</span>
+        </div>
       </div>
     </div>
   </section>
