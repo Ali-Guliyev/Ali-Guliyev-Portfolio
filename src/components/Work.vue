@@ -30,7 +30,9 @@
 <script>
 import { ref } from "@vue/reactivity";
 import service from "../services/service";
-import { onMounted } from "@vue/runtime-core";
+import { onMounted, onUpdated, watch } from "@vue/runtime-core";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   setup() {
     const projects = ref(null);
@@ -38,7 +40,16 @@ export default {
     onMounted(() => {
       service.getProjects().then((res) => {
         projects.value = res.data;
-        console.log(res.data);
+      });
+      gsap.registerPlugin(ScrollTrigger);
+    });
+    onUpdated(() => {
+      gsap.from(".project", {
+        duration: 0.4,
+        y: "50%",
+        opacity: 0,
+        stagger: 0.1,
+        scrollTrigger: ".project",
       });
     });
 

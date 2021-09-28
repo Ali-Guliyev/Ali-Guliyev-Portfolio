@@ -17,7 +17,6 @@ html {
 
 .navLink {
   @apply flex items-center justify-center gap-1 hover:bg-primary cursor-pointer rounded-full py-2 px-4 transition duration-75 ease-in;
-  animation: fade 2s ease 1 forwards;
 }
 
 .navLink svg {
@@ -33,10 +32,6 @@ html {
   @apply bg-white;
   width: 2rem;
   height: 0.2rem;
-}
-
-nav ul {
-  animation: move-in 1s ease 1 forwards;
 }
 
 section:nth-child(even) {

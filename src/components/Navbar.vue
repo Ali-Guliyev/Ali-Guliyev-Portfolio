@@ -41,45 +41,29 @@
 <script>
 import { UserIcon, CollectionIcon, PhoneIcon } from "@heroicons/vue/outline";
 import { onMounted, ref } from "@vue/runtime-core";
+import { gsap } from "gsap";
 
 export default {
   components: { UserIcon, CollectionIcon, PhoneIcon },
   setup() {
     const links = ref(null);
+    const timeline = gsap.timeline({ defaults: { duration: 0.7 } });
 
     const toggleMenu = () => {
       links.value.classList.toggle("hidden");
     };
 
+    onMounted(() => {
+      timeline
+        .from("nav", { y: "-100%" })
+        .from(".logo", { opacity: 0 })
+        .from(".navLink", {
+          opacity: 0,
+          stagger: 0.1,
+        });
+    });
+
     return { links, toggleMenu };
   },
 };
 </script>
-
-<style>
-nav {
-  animation: nav 1s ease 1;
-}
-
-@keyframes nav {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-
-a.logo {
-  animation: fade 2s ease 1 forwards;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-</style>
