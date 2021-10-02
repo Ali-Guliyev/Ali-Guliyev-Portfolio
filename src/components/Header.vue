@@ -3,9 +3,9 @@
     <AnimatedBackground :nums="20" :variants="['0', '1']" />
     <header class="z-10 w-full">
       <div
-        class="max-w-7xl mx-auto px-16 medium:flex justify-between items-center"
+        class="max-w-7xl mx-auto px-16 sm:px-12 medium:flex justify-between items-center"
       >
-        <div class="medium:text-left text-center">
+        <div class="intro-text medium:text-left text-center">
           <span>
             <span class="text-xl sm:text-xl medium:text-2xl">Hi I am</span>
             <h1
@@ -18,8 +18,8 @@
         </div>
 
         <svg
-          class="mx-auto mt-5 medium:mt-0"
-          style="max-width: 572px; max-height: 495px"
+          class="developer"
+          style="max-width: 572px; max-height: 497px"
           viewBox="0 0 572 497"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -619,7 +619,28 @@ export default {
           },
           "<.1"
         );
+
+      gsap.from(".intro-text", {
+        duration: 1,
+        opacity: 0,
+        ease: "sine.inOut",
+        x: "20%",
+      });
+
+      gsap.from(".developer", {
+        duration: 1.3,
+        opacity: 0,
+        scale: 0.3,
+        rotation: 20,
+        ease: "elastic.out",
+      });
     });
   },
 };
 </script>
+
+<style scoped>
+svg {
+  @apply mt-5 mx-auto medium:m-0;
+}
+</style>

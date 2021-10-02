@@ -4,9 +4,7 @@
   >
     <div class="sm:flex justify-between items-center max-w-7xl mx-auto">
       <div class="flex justify-between items-center">
-        <a href="#" class="logo" style="font-size: 19px"
-          >&lt;Ali Guliyev/&gt;</a
-        >
+        <a href="#" class="logo text-sm sm:text-lg">&lt;Ali Guliyev/&gt;</a>
         <div class="burger" @click="toggleMenu">
           <div class="line"></div>
           <div class="line"></div>

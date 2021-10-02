@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply overflow-x-hidden;
-  @apply text-white;
+  @apply overflow-x-hidden text-white;
 }
 
 html {

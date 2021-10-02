@@ -43,14 +43,25 @@ export default {
       });
       gsap.registerPlugin(ScrollTrigger);
     });
-    onUpdated(() => {
-      gsap.from(".project", {
-        duration: 0.4,
+
+    const animate = (el, isStagger) => {
+      gsap.from(el, {
+        duration: 0.7,
         y: "50%",
         opacity: 0,
-        stagger: 0.1,
-        scrollTrigger: ".project",
+        scrollTrigger: el,
+        stagger: isStagger ? 0.1 : 0,
       });
+    };
+
+    onUpdated(() => {
+      if (window.innerWidth < 750) {
+        document.querySelectorAll(".project").forEach((el) => {
+          animate(el);
+        });
+      } else {
+        animate(".project", true);
+      }
     });
 
     return {
