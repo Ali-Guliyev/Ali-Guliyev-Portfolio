@@ -89,7 +89,7 @@
       "skill": "SASS",
       "percentage": "95"
     },
-     {
+    {
       "id": 8,
       "skill": "TailwindCss",
       "percentage": "90"
@@ -103,7 +103,7 @@
       "id": 10,
       "skill": "C++",
       "percentage": "50"
-    }
+    },
     {
       "id": 11,
       "skill": "BootStrap",
