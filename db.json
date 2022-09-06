@@ -54,57 +54,57 @@
   "skills": [
     {
       "id": 1,
-      "name": "HTML",
+      "language": "HTML",
       "percentage": "100"
     },
     {
       "id": 2,
-      "name": "CSS",
+      "language": "CSS",
       "percentage": "100"
     },
     {
       "id": 3,
-      "name": "Python",
+      "language": "Python",
       "percentage": "100"
     },
     {
       "id": 4,
-      "name": "Figma",
+      "language": "Figma",
       "percentage": "100"
     },
     {
       "id": 5,
-      "name": "JavaScript",
+      "language": "JavaScript",
       "percentage": "100"
     },
     {
       "id": 6,
-      "name": "Vue.js",
+      "language": "Vue.js",
       "percentage": "95"
     },
     {
       "id": 7,
-      "name": "SASS",
+      "language": "SASS",
       "percentage": "95"
     },
     {
       "id": 8,
-      "name": "TailwindCss",
+      "language": "TailwindCss",
       "percentage": "90"
     },
     {
       "id": 9,
-      "name": "C#",
+      "language": "C#",
       "percentage": "85"
     },
     {
       "id": 10,
-      "name": "C++",
+      "language": "C++",
       "percentage": "50"
     },
     {
       "id": 11,
-      "name": "BootStrap",
+      "language": "BootStrap",
       "percentage": "30"
     }
   ]
