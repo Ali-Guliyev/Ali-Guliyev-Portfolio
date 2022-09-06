@@ -15,7 +15,7 @@
           :style="{ width: `${skill.percentage}%` }"
           class="h-full bg-primary rounded-full py-3 sm:py-4 px-9 text-left"
         >
-          <span>{{ skill.skill }}</span>
+          <span>{{ skill.name }}</span>
 
           <span class="absolute right-8 top-1/2 transform -translate-y-1/2"
             >{{ skill.percentage }}%</span
@@ -38,7 +38,7 @@ export default {
 
     onMounted(() => {
       service.getText().then((res) => {
-        aboutText.value = res.data.abouttext;
+        aboutText.value = res.data;
       });
       service.getSkills().then((res) => {
         skills.value = res.data;
