@@ -50,63 +50,61 @@
       "code": "https://github.com/Ali-Guliyev/ClickButtonSweeperGame"
     }
   ],
-  "text": {
-    "abouttext": "Hi I am Ali Guliyev and I am 14 years old. I am a web developer. And Ilove building websites with JavaScript 👨‍💻"
-  },
+  "aboutText": "My name is Ali Guliyev and I am almost 16 years old. I am from Baku, Azerbaijan and I live in Istanbul, Turkey. I am an experienced webdeveloper 👨‍💻 and currently learning backend development with NestJSand mathemathics. One of my hobbies is to play basketball 🏀 everyday. I love to watch basketball games, especially NBA, and myfavorite team is Golden State Warriors",
   "skills": [
     {
       "id": 1,
-      "skill": "HTML",
+      "name": "HTML",
       "percentage": "100"
     },
     {
       "id": 2,
-      "skill": "CSS",
+      "name": "CSS",
       "percentage": "100"
     },
     {
       "id": 3,
-      "skill": "Python",
+      "name": "Python",
       "percentage": "100"
     },
     {
       "id": 4,
-      "skill": "Figma",
+      "name": "Figma",
       "percentage": "100"
     },
     {
       "id": 5,
-      "skill": "JavaScript",
+      "name": "JavaScript",
       "percentage": "100"
     },
     {
       "id": 6,
-      "skill": "Vue.js",
+      "name": "Vue.js",
       "percentage": "95"
     },
     {
       "id": 7,
-      "skill": "SASS",
+      "name": "SASS",
       "percentage": "95"
     },
     {
       "id": 8,
-      "skill": "TailwindCss",
+      "name": "TailwindCss",
       "percentage": "90"
     },
     {
       "id": 9,
-      "skill": "C#",
+      "name": "C#",
       "percentage": "85"
     },
     {
       "id": 10,
-      "skill": "C++",
+      "name": "C++",
       "percentage": "50"
     },
     {
       "id": 11,
-      "skill": "BootStrap",
+      "name": "BootStrap",
       "percentage": "30"
     }
   ]
