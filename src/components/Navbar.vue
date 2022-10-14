@@ -1,10 +1,8 @@
 <template>
-  <nav
-    class="font-bold bg-secondary py-2 px-5 absolute top-0 left-0 w-full z-50"
-  >
+  <nav class="fixed top-0 left-0 font-bold bg-secondary py-2 px-5 w-full z-50">
     <div class="sm:flex justify-between items-center max-w-7xl mx-auto">
       <div class="flex justify-between items-center">
-        <a href="#" class="logo text-sm sm:text-lg">&lt;Ali Guliyev/&gt;</a>
+        <a href="#" class="logo text-sm sm:text-base">&lt;Ali Guliyev/&gt;</a>
         <div class="burger" @click="toggleMenu">
           <div class="line"></div>
           <div class="line"></div>
