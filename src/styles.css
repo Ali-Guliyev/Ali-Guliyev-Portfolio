@@ -15,7 +15,7 @@ html {
 }
 
 .navLink {
-  @apply flex items-center justify-center gap-1 hover:bg-primary cursor-pointer rounded-full py-2 px-4 transition duration-75 ease-in;
+  @apply text-sm flex items-center justify-center gap-1 hover:bg-primary cursor-pointer rounded-full py-2 px-4 transition duration-75 ease-in;
 }
 
 .navLink svg {
@@ -30,7 +30,7 @@ html {
 .burger .line {
   @apply bg-white;
   width: 2rem;
-  height: 0.2rem;
+  height: 0.15rem;
 }
 
 section:nth-child(even) {
@@ -57,10 +57,18 @@ section .title {
   @apply scale-110;
 }
 
+#contact ul {
+  @apply flex flex-wrap gap-5;
+}
+
 #contact ul img {
-  @apply w-10 sm:w-14 transform transition hover:scale-110;
+  @apply w-8 sm:w-12 transform transition hover:scale-110;
 }
 
 #contact ul li {
-  @apply mx-3 flex flex-col justify-between items-center cursor-pointer;
+  @apply flex flex-col justify-between items-center cursor-pointer;
+}
+
+#contact ul li span {
+  @apply text-sm sm:text-base mt-2;
 }
