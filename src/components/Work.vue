@@ -19,7 +19,10 @@
         <div class="py-2 px-5 flex justify-between items-center">
           <span class="font-bold text-sm">{{ project.name }}</span>
           <a :href="project.code" target="_blank">
-            <fa class="text-2xl" :icon="['fab', 'github']" />
+            <img
+              class="w-6 h-6 transition transform hover:scale-110"
+              src="../assets/img/github.png"
+            />
           </a>
         </div>
       </div>

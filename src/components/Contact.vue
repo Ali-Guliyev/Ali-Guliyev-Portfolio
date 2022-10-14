@@ -22,9 +22,7 @@
 </template>
 
 <script>
-import { gsap } from "gsap";
 import { ref } from "vue";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { onMounted } from "@vue/runtime-core";
 import service from "../services/service";
 export default {
@@ -34,16 +32,6 @@ export default {
     onMounted(() => {
       service.getSocial().then((res) => {
         socialLinks.value = res.data;
-      });
-
-      gsap.registerPlugin(ScrollTrigger);
-
-      gsap.from(".contactIcon", {
-        duration: 0.6,
-        y: "-50%",
-        opacity: 0,
-        stagger: 0.1,
-        scrollTrigger: ".contactIcon",
       });
     });
 
