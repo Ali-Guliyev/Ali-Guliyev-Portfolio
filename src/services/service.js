@@ -19,6 +19,9 @@ export default {
     return apiClient.get("/skills");
   },
   getText() {
-    return apiClient.get("/aboutText");
+    return apiClient.get("/about");
+  },
+  getSocial() {
+    return apiClient.get("/social");
   },
 };
