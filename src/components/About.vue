@@ -1,7 +1,9 @@
 <template>
   <section id="about">
     <h1 class="title">About Me</h1>
-    <p class="w-3/4 mx-auto text-sm md:text-base">{{ aboutText }}</p>
+    <p class="w-3/4 mx-auto text-sm md:text-base" v-if="about">
+      {{ about.text }}
+    </p>
     <h2 class="p-3 text-lg sm:text-xl font-bold mb-2">My Skills:</h2>
     <div
       class="skills max-w-3xl mx-auto flex flex-col gap-2 sm:gap-3 text-sm md:text-base"
@@ -33,12 +35,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   setup() {
-    const aboutText = ref(null);
+    const about = ref(null);
     const skills = ref(null);
 
     onMounted(() => {
       service.getText().then((res) => {
-        aboutText.value = res.data;
+        about.value = res.data;
       });
       service.getSkills().then((res) => {
         skills.value = res.data;
@@ -55,7 +57,7 @@ export default {
     });
 
     return {
-      aboutText,
+      about,
       skills,
     };
   },
