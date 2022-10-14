@@ -3,9 +3,9 @@
     <AnimatedBackground :nums="20" :variants="['0', '1']" />
     <header class="z-10 w-full">
       <div
-        class="max-w-7xl mx-auto px-16 sm:px-12 medium:flex justify-between items-center"
+        class="max-w-7xl mx-auto px-16 sm:px-12 flex-col md:flex-row flex justify-between items-center"
       >
-        <div class="intro-text medium:text-left text-center">
+        <div class="intro-text md:text-left text-center">
           <span>
             <span class="text-xl sm:text-xl medium:text-2xl">Hi I am</span>
             <h1
@@ -642,5 +642,9 @@ export default {
 <style scoped>
 svg {
   @apply mt-5 mx-auto medium:m-0;
+}
+
+header {
+  padding-top: 40px;
 }
 </style>
