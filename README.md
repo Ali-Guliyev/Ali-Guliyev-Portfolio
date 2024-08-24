@@ -1,4 +1,4 @@
-## Set up a Vue.js app running on Vite
+## Version 1 of my Portfolio Website
 
 ### set up Vite
 
